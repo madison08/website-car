@@ -19,8 +19,9 @@ body{
 
 .context h1{
     text-align: center;
-    color: #fff;
+    color: red;
     font-size: 50px;
+    z-index: 1;
 }
 
 
@@ -29,6 +30,9 @@ body{
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
     height:100vh;
+    color: red;
+    font-size: 50px;
+    z-index: 1;
     
    
 }
@@ -51,6 +55,7 @@ body{
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
+    z-index: 1;
     
 }
 
@@ -129,9 +134,6 @@ body{
     animation-delay: .5s;
     animation-duration: 11s;
 }
-
-
-
 @keyframes animate {
 
     0%{
@@ -153,23 +155,270 @@ body{
     padding: 20px;
     margin-bottom: 50px;
 }
-.i{
-    text-align: center;
-}
-
 .coul{
     color: #fff;
 }
 .pl-1{
     text-align: center;
-    color: #ee0f26;
+    color: fff;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 500;
+    font-weight: 500;   
+}
+.ub{
+    color:white;
+    text-align: center;
+    background-color: #010121;
+    height: 150px;
+    border-radius: 25px ;
+    display: block;
+}
+.ub:hover{
+    
+}
+.ub1,.ub3 ,.ub5 ,.ub7,.ub9, .ub11{
+    background-color: rgb(173, 55, 12);
+}
+.box{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-name: myanimations;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+    animation-delay: 2s; 
+    animation-direction: alternate;
+    background-color:  white;
+    left: 30px;
+    top: -10px;
+}
+@keyframes myanimations{
+    0%{
+        background-color:  white;
+        left: 90px;
+        top: -10px;
+        border-radius: 0 0 0 0;
+    }
+    25%{
+        background-color:orangered;
+        left: 85%;
+        top: -10px;
+        border-radius: 50% 0 0 0;
+    }
+    50%{
+        background-color:#010121;
+        left: 85%;
+        top: 700px;
+        border-radius: 50% 50% 0 0;
+    }
+    75%{
+        background-color: orangered;
+        left: 90px;
+        top: 700px;
+        border-radius: 50% 50% 50% 0;
+    }
+    100%{
+        background-color: white;
+        left: 90px;
+        top: -10px;
+        border-radius: 50% 50% 50% 50% ;
+    }
+}
+.box2{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+    animation-delay: 2s; 
+    animation-direction: alternate;
+    left:95%;
+    top:0px;
+}
+@keyframes myanimation{
+    0%{
+        background-color:  white;
+        border-radius: 0 0 0 0;
+        left: 85%;
+        top:0px;
+    }
+    25%{
+        background-color:#010121;
+        left: 90px;
+        top: 0px;
+        border-radius: 50% 0 0 0;
+    }
+    50%{
+        background-color:orangered;
+        left: 90px;
+        top: -700px;
+        border-radius: 50% 50% 0 0;
+    }
+    75%{
+        background-color:#010121;
+        left: 85%;
+        top: -700px;
+        border-radius: 50% 50% 50% 0;
+    }
+    100%{
+        background-color: white;
+        left: 85%;
+        top:0px;
+        border-radius: 50% 50% 50% 50% ;
+    }
+}
+@media(max-width : 1310px){
+    .box ,.box2{
+        height: 20px;
+        width: 20px;
+    }
+    @keyframes myanimation{
+        0%{
+            background-color:  white;
+            border-radius: 0 0 0 0;
+            left:100%;
+            top:0px;
+        }
+        25%{
+            background-color:#010121;
+            left: -30px;
+            top: 0px;
+            border-radius: 50% 0 0 0;
+        }
+        50%{
+            background-color:orangered;
+            left: -30px;
+            top: -700px;
+            border-radius: 50% 50% 0 0;
+        }
+        75%{
+            background-color:#010121;
+            left:100%;
+            top: -700px;
+            border-radius: 50% 50% 50% 0;
+        }
+        100%{
+            background-color: white;
+            left:100%;
+            top:0px;
+            border-radius: 50% 50% 50% 50% ;
+        }
+    }
+    @keyframes myanimations{
+        0%{
+            background-color:  white;
+            left: -30px;
+            top: -10px;
+            border-radius: 0 0 0 0;
+        }
+        25%{
+            background-color:orangered;
+            left:100%;
+            top: -10px;
+            border-radius: 50% 0 0 0;
+        }
+        50%{
+            background-color:#010121;
+            left:100%;
+            top: 700px;
+            border-radius: 50% 50% 0 0;
+        }
+        75%{
+            background-color: orangered;
+            left:-30px;
+            top: 700px;
+            border-radius: 50% 50% 50% 0;
+        }
+        100%{
+            background-color: white;
+            left: -30px;
+            top: -10px;
+            border-radius: 50% 50% 50% 50% ;
+        }
+    }
+}
+@media(max-width : 972px){
+    .box ,.box2{
+        height: 15px;
+        width: 15px;
+    }
+    @keyframes myanimation{
+        0%{
+            background-color:  white;
+            border-radius: 0 0 0 0;
+            left:100%;
+            top:0px;
+        }
+        25%{
+            background-color:#010121;
+            left: -30px;
+            top: 0px;
+            border-radius: 50% 0 0 0;
+        }
+        50%{
+            background-color:orangered;
+            left: -30px;
+            top: -1950px;
+            border-radius: 50% 50% 0 0;
+        }
+        75%{
+            background-color:#010121;
+            left:100%;
+            top: -1950px;
+            border-radius: 50% 50% 50% 0;
+        }
+        100%{
+            background-color: white;
+            left:100%;
+            top:0px;
+            border-radius: 50% 50% 50% 50% ;
+        }
+    }
+    @keyframes myanimations{
+        0%{
+            background-color:  white;
+            left: -30px;
+            top: -10px;
+            border-radius: 0 0 0 0;
+        }
+        25%{
+            background-color:orangered;
+            left:100%;
+            top: -10px;
+            border-radius: 50% 0 0 0;
+        }
+        50%{
+            background-color:#010121;
+            left:100%;
+            top: 1910px;
+            border-radius: 50% 50% 0 0;
+        }
+        75%{
+            background-color: orangered;
+            left:-30px;
+            top: 1910px;
+            border-radius: 50% 50% 50% 0;
+        }
+        100%{
+            background-color: white;
+            left: -30px;
+            top: -10px;
+            border-radius: 50% 50% 50% 50% ;
+        }
+    }
+}
+.truncate{
+    line-height: 95px;
+}
+.prix{
+   padding: 50px;
+   border: 2px solid transparent;
 }
 .py-1{
-    color: #010121;
-    text-align: center;
+    line-height:0px;
 }
 .py-1:hover{
         animation: nope .2s forwards;

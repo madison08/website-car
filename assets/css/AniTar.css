@@ -168,7 +168,7 @@ body{
 .ub{
     color:white;
     text-align: center;
-    background-color: #010121;
+    /* background-color: #010121; */
     height: 150px;
     border-radius: 25px ;
     display: block;
@@ -176,8 +176,16 @@ body{
 .ub:hover{
     
 }
-.ub1,.ub3 ,.ub5 ,.ub7,.ub9, .ub11{
+
+.true_ub{
     background-color: rgb(173, 55, 12);
+}
+.true_ub_2{
+    background-color: #010121;
+}
+
+.ub1,.ub3 ,.ub5 ,.ub7,.ub9, .ub11{
+    /* background-color: rgb(173, 55, 12); */
 }
 .box{
     background-color: white;

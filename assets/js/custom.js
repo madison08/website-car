@@ -4,10 +4,8 @@
   "use strict";
 
   var tarif = document.getElementsByClassName('ub')
-  console.log(tarif);
 
   for(var i = 0;i< tarif.length; i++){
-    console.log('helll')
     if(i % 2 == 1 ){
       console.log(i)
       tarif[i].classList.add('true_ub')

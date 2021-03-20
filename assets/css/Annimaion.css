@@ -412,3 +412,47 @@
             color:rgb(227, 89, 39);
         }
     }
+
+
+
+     /*fin modification des textes annimes */
+ /* debut modification des images */
+ .rectangle{
+    height: 300px;
+    text-align: center;
+    border-radius: 5%;
+    overflow: hidden;
+    transition: all .8s;
+    position: relative;
+    background-color: #fff;
+  }
+  .image{
+    height: 300px;
+    border-radius: 5%;
+    position: relative;
+    z-index: 1;
+    transition: all .8s;
+    text-align: center;
+    color: orangered;
+    text-align: center;
+    font-size: 15px;
+    line-height: 50px;
+    font-weight: 500;
+  }
+  .image:hover{
+    transform:translateY(84%);
+    transition: all .8s;
+    color: #010121;
+    font-size: 15px;
+    line-height: 50px;
+ }
+/* fin des modification des images */
+ /* modificatin des textes */
+   .ecri{
+    color: blue;
+    display: grid;
+    position: absolute;
+    font-size: 13px;
+    top: 60px;
+    line-height: 20px;
+  }
